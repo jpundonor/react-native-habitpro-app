@@ -34,7 +34,7 @@ export const Login = ({navigation}: {navigation: any}) => {
       </TouchableOpacity>
       <Button
         title="O inicia sesión con Google"
-        onPress={() => console.log('Inicio Google')}
+        onPress={() => console.log('Inicio con Google')}
       />
       <View>
         <Text style={styles.label}>¿No tienes una cuenta?</Text>
