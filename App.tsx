@@ -1,15 +1,12 @@
 import React from 'react';
+import {Provider} from 'react-redux';
 import {AppRouter} from './src/routers/AppRouter';
-// import { Home } from './src/screens/Home';
-// import { CounterScreen } from './src/screens/CounterScreen';
-// import Login from './src/screens/Login';
-// import {HolaMundoScreen} from './src/screens/HolaMundoScreen';
+import { store } from './src/store';
 
 export const App = () => {
-  // return <HolaMundoScreen />;
-  // return <Login />;
-  return <AppRouter />;
-  // return <Home />;
+  return (
+    <Provider store={store}>
+      <AppRouter />
+    </Provider>
+  );
 };
-
-// export default App;
