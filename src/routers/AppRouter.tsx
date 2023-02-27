@@ -2,7 +2,7 @@ import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {Login} from '../screens/Login';
-import {Home} from '../screens/Home';
+import {HomeScreen} from '../screens/Home/HomeScreen';
 import { Register } from '../screens/Register';
 
 const Stack = createNativeStackNavigator();
@@ -12,10 +12,10 @@ export const AppRouter = () => {
     <NavigationContainer>
       <Stack.Navigator
         screenOptions={{headerShown: false}}
-        initialRouteName="Login">
+        initialRouteName="Home">
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Register" component={Register} />
-        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Home" component={HomeScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
